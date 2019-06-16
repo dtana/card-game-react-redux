@@ -17,8 +17,8 @@ This is the Card Game App that utilizes https://deckofcardsapi.com/ API.
 - card value from lowes to highest: A=1, 2 to 10 = card value, J=12, Q=13, K=14
 - in case that two or more cards have the same value, last player with the same card takes all
 - played cards cannot be reused
-- game ends when players don't have any cards left in hand, left-over cards from deck are not delt
-- the winner is the player with highest sum of values of taken cards. There can be more than one winner
+- game ends when players have no cards left in hand
+- player with highest sum of values of taken cards is the winner. There can be more than one winner
 
 ## Project Objectives
 
