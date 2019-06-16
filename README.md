@@ -1,3 +1,34 @@
+# Card Game app [React/Redux/Unit Testing]
+
+This is the Card Game App that utilizes https://deckofcardsapi.com/ API.
+
+![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59563745-3ac6f400-903e-11e9-9867-1cdd89c8f759.jpg)
+![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59563744-3ac6f400-903e-11e9-8590-77f1d43c2053.jpg)
+
+## Game Rules
+
+- 2 to 4 players - one is human controlled, the others are controlled by computer
+- one standard deck of 52 cards
+- one card deal, each player gets 10 cards 
+- human plays first
+- order of play determined by clock-wise order
+- computer randomly choose cards
+- each player plays one card, highest card takes all
+- card value from lowes to highest: A=1, 2 to 10 = card value, J=12, Q=13, K=14
+- in case that two or more cards have the same value, last player with the same card takes all
+- played cards cannot be reused
+- game ends when players don't have any cards left in hand, left-over cards from deck are not delt
+- the winner is the player with highest sum of values of taken cards. There can be more than one winner
+
+## Project Objectives
+
+- project made by React/Redux
+- ES6+ syntax is prefered
+- unit tests for components and Redux
+- responsive design
+- cards API (https://deckofcardsapi.com/), (usage of Piles from API is optional)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

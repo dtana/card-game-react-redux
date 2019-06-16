@@ -1,0 +1,222 @@
+.Game {
+  display: flex;
+  height: 100%;
+  text-align: center;
+}
+
+.player {
+  margin: 20px 0 0;
+  min-height: 240px;
+
+  p {
+    color: #fafa16;
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+
+    span {
+      color: white;
+      display: block;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+
+  &--content {
+    text-align: left;
+
+    a {
+      display: block;
+      margin: 15px 0;
+    }
+  }
+
+  &--menu {
+    p {
+      color: white;
+      font-family: "Pacifico", cursive;
+      font-size: 4.5rem;
+      line-height: 1;
+      text-align: center;
+      text-shadow: 1px 2px 5px #00000090;
+    }
+
+    &.winner {
+      position: absolute;
+      top: 40px;
+
+      p {
+        color: #fafa16;
+        text-align: right;
+      }
+    }
+
+    a {
+      background: #d2ff52;
+      background: -moz-linear-gradient(top, #d2ff52 0%, #5ab802 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, #d2ff52), color-stop(100%, #5ab802));
+      background: -webkit-linear-gradient(top, #d2ff52 0%, #5ab802 100%);
+      background: -o-linear-gradient(top, #d2ff52 0%, #5ab802 100%);
+      background: -ms-linear-gradient(top, #d2ff52 0%, #5ab802 100%);
+      background: linear-gradient(to bottom, #d2ff52 0%, #5ab802 100%);
+      color: black;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 20px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #4fa300;
+        color: white;
+      }
+    }
+  }
+}
+
+.cards {
+  display: inline-flex;
+  justify-content: center;
+  -webkit-transition: opacity 2s ease;
+  -moz-transition: opacity 2s ease;
+  -o-transition: opacity 2s ease;
+  -ms-transition: opacity 2s ease;
+  transition: opacity 2s ease;
+  width: 100%;
+
+  img {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    content: url("../assets/card-back.png");
+    // content: ""; // enable this property to see opponents cards
+    display: inline-block;
+    margin-left: -75px;
+    width: 95px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+
+  &.center-pot {
+    margin-top: 60px;
+
+    img {
+      content: "";
+      margin: 10px;
+
+      &:first-of-type {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &.human img {
+    content: "";
+    cursor: pointer;
+    margin: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:hover {
+      -webkit-box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.7);
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.7);
+      -moz-transform: scale(1.05, 1.05);
+      -o-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+      transform: scale(1.05, 1.05);
+      z-index: 100;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .player {
+    min-height: 210px;
+
+    p {
+      font-size: 32px;
+    }
+
+    &--menu p {
+      font-size: 4rem;
+    }
+  }
+
+  .cards {
+    img {
+      margin-left: calc(3vw - 90px);
+      width: 80px;
+    }
+
+    &.center-pot img {
+      margin: 5px;
+    }
+
+    &.human img {
+      margin-left: calc(9vw - 90px);
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .player--menu p {
+    font-size: 3rem;
+
+    span {
+      margin-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .player {
+    p {
+      font-size: 30px;
+    }
+
+    &--menu p {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .player {
+    min-height: 200px;
+
+    p {
+      font-size: 22px;
+    }
+
+    &--menu p {
+      font-size: 2.5rem;
+    }
+  }
+
+  .cards.center-pot {
+    margin-top: 50px;
+
+    img {
+      margin: 0 0 0 calc(18vw - 90px);
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+}
