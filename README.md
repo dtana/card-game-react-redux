@@ -2,8 +2,8 @@
 
 This is the Card Game App that utilizes https://deckofcardsapi.com/ API.
 
-![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59563745-3ac6f400-903e-11e9-9867-1cdd89c8f759.jpg)
-![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59563744-3ac6f400-903e-11e9-8590-77f1d43c2053.jpg)
+![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59564123-4bc63400-9043-11e9-8d96-396225539f2b.jpg)
+![card-game-app-thumb](https://user-images.githubusercontent.com/31347233/59564124-4bc63400-9043-11e9-8bef-14f2570c60ac.jpg)
 
 ## Game Rules
 
