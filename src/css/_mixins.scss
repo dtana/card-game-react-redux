@@ -1,0 +1,50 @@
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+@mixin box-shadow($shadowz) {
+  box-shadow: $shadowz;
+  -webkit-box-shadow: $shadowz;
+  -moz-box-shadow: $shadowz;
+}
+
+@mixin transition($animate) {
+  -webkit-transition: $animate;
+  -moz-transition: $animate;
+  transition: $animate;
+}
+
+@mixin transform($tranform) {
+  transform: $tranform;
+  -ms-transform: $tranform;
+  -webkit-transform: $tranform;
+  -moz-transform: $tranform;
+}
+
+@mixin box-sizing($box-size) {
+  box-sizing: $box-size;
+  -webkit-box-sizing: $box-size;
+  -moz-box-sizing: $box-size;
+}
+
+@mixin linear-gradient($color-primary, $color-secondary) {
+  background: $color-primary;
+  background: -moz-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $color-primary), color-stop(100%, $color-secondary));
+  background: -webkit-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+  background: -o-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+  background: -ms-linear-gradient(top, $color-primary 0%, $color-secondary 100%);
+  background: linear-gradient(to bottom, $color-primary 0%, $color-secondary 100%);
+}
+
+@mixin radial-gradient($innerColor, $outerColor)  {
+  background-color: $outerColor;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from($innerColor), to($outerColor));
+  background-image: -webkit-radial-gradient(circle, $innerColor, $outerColor);
+  background-image: -moz-radial-gradient(circle, $innerColor, $outerColor);
+  background-image: -o-radial-gradient(circle, $innerColor, $outerColor);
+  background-repeat: no-repeat;
+}
